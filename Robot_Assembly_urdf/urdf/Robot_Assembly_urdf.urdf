@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robot_Assembly_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0188294056308936 -0.00424042114001033 0.0640742409147315"
+        rpy="0 0 0" />
+      <mass
+        value="31.0320339728617" />
+      <inertia
+        ixx="0.565958898785793"
+        ixy="-0.0151505883127099"
+        ixz="0.0502324289297227"
+        iyy="0.886935849980712"
+        iyz="0.0113068755075638"
+        izz="1.32772548603042" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rwl_1">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -5.55111512312578E-17 -0.019892784140451"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="-8.09674537746819E-20"
+        ixz="-1.56492304462249E-20"
+        iyy="0.000322146824462347"
+        iyz="4.53082169817295E-21"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rwj_1"
+    type="revolute">
+    <origin
+      xyz="0.285 -0.274 0.05"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rwl_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="lwl_1">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 5.55111512312578E-17 0.0188927841404509"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="-9.82852608948411E-21"
+        ixz="-3.42124149900002E-20"
+        iyy="0.000322146824462347"
+        iyz="7.20065742206241E-20"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lwj_1"
+    type="revolute">
+    <origin
+      xyz="0.285 0.273 0.05"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lwl_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="rwl_2">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0198927841404509"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462348"
+        ixy="4.17711733678562E-22"
+        ixz="-2.36592215475959E-20"
+        iyy="0.000322146824462347"
+        iyz="-1.23407737259737E-22"
+        izz="0.000549435522875279" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rwj_2"
+    type="revolute">
+    <origin
+      xyz="0.095 -0.274 0.0499999999999998"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rwl_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="lwl_2">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 2.22044604925031E-16 0.018892784140451"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="1.46937132839652E-20"
+        ixz="-7.4253389579514E-20"
+        iyy="0.000322146824462347"
+        iyz="4.17880014772499E-20"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lwj_2"
+    type="revolute">
+    <origin
+      xyz="0.095 0.273 0.0499999999999998"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lwl_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="rwl_3">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-18 -5.55111512312578E-17 -0.019892784140451"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462348"
+        ixy="-1.62304834610031E-22"
+        ixz="-1.2731733559271E-20"
+        iyy="0.000322146824462348"
+        iyz="2.03535873829037E-22"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rwj_3"
+    type="revolute">
+    <origin
+      xyz="-0.095 -0.274 0.0499999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rwl_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="lwl_3">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-17 2.22044604925031E-16 0.0188927841404511"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="-2.24217455227932E-21"
+        ixz="-2.28467036272142E-20"
+        iyy="0.000322146824462347"
+        iyz="4.56494090163496E-20"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lwj_3"
+    type="revolute">
+    <origin
+      xyz="-0.0949999999999999 0.273 0.0499999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lwl_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="rwl_4">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -5.55111512312578E-17 -0.0198927841404509"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="-8.12494296504006E-21"
+        ixz="6.18409410860754E-21"
+        iyy="0.000322146824462347"
+        iyz="5.24692050943604E-21"
+        izz="0.000549435522875278" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rwl_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rwj_4"
+    type="revolute">
+    <origin
+      xyz="-0.285 -0.274 0.0499999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rwl_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="lwl_4">
+    <inertial>
+      <origin
+        xyz="-1.66533453693773E-16 2.22044604925031E-16 0.0188927841404508"
+        rpy="0 0 0" />
+      <mass
+        value="0.365524552938848" />
+      <inertia
+        ixx="0.000322146824462347"
+        ixy="2.19601697798653E-20"
+        ixz="-1.14802424331746E-20"
+        iyy="0.000322146824462347"
+        iyz="5.35385294899972E-20"
+        izz="0.000549435522875277" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/lwl_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lwj_4"
+    type="revolute">
+    <origin
+      xyz="-0.285 0.273 0.0499999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lwl_4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="20"
+      velocity="5" />
+  </joint>
+  <link
+    name="robotichandbase_Link">
+    <inertial>
+      <origin
+        xyz="0.46 0.0914369156086379 0.273"
+        rpy="0 0 0" />
+      <mass
+        value="2.30055456196887" />
+      <inertia
+        ixx="0.00675445543919116"
+        ixy="9.95871935182872E-19"
+        ixz="2.37960604275706E-11"
+        iyy="0.0103948670468881"
+        iyz="2.23587162465854E-18"
+        izz="0.00675445488587375" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/robotichandbase_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/robotichandbase_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rhb_joint"
+    type="revolute">
+    <origin
+      xyz="-0.285 0.273 0.0499999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="robotichandbase_Link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.142"
+      upper="3.142"
+      effort="30"
+      velocity="2" />
+  </joint>
+  <link
+    name="rhl_1">
+    <inertial>
+      <origin
+        xyz="0.460000000000451 0.212558646903459 0.27299999995956"
+        rpy="0 0 0" />
+      <mass
+        value="0.414794961870069" />
+      <inertia
+        ixx="0.00092540568481972"
+        ixy="2.91756185187478E-15"
+        ixz="3.71920186273293E-07"
+        iyy="0.000690739956951653"
+        iyz="-2.62240403721062E-13"
+        izz="0.000893261991941587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rhj_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="robotichandbase_Link" />
+    <child
+      link="rhl_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.157"
+      upper="1.157"
+      effort="20"
+      velocity="2" />
+  </joint>
+  <link
+    name="rhl_2">
+    <inertial>
+      <origin
+        xyz="0.46 0.346729118224483 0.273"
+        rpy="0 0 0" />
+      <mass
+        value="0.749831038851392" />
+      <inertia
+        ixx="0.00444464897584612"
+        ixy="-9.02352553466764E-20"
+        ixz="-1.13573510001705E-06"
+        iyy="0.000401130821623719"
+        iyz="-1.17910062361894E-19"
+        izz="0.0045428063673886" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rhj_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rhl_1" />
+    <child
+      link="rhl_2" />
+    <axis
+      xyz="-0.011568 0 0.99993" />
+    <limit
+      lower="-1.157"
+      upper="1.157"
+      effort="20"
+      velocity="2" />
+  </joint>
+  <link
+    name="rhl_3">
+    <inertial>
+      <origin
+        xyz="0.551606164015692 0.46576 0.274059791924668"
+        rpy="0 0 0" />
+      <mass
+        value="0.37932549915381" />
+      <inertia
+        ixx="0.000260591433644554"
+        ixy="-1.41381449750956E-13"
+        ixz="-7.21355886503767E-06"
+        iyy="0.00100456825947825"
+        iyz="1.22207135314351E-11"
+        izz="0.000884032693776069" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rhj_3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rhl_2" />
+    <child
+      link="rhl_3" />
+    <axis
+      xyz="-0.011568 0 0.99993" />
+    <limit
+      lower="-1.157"
+      upper="1.157"
+      effort="20"
+      velocity="2" />
+  </joint>
+  <link
+    name="rhl_4">
+    <inertial>
+      <origin
+        xyz="0.639188008977052 0.439303847201513 0.275073026492832"
+        rpy="0 0 0" />
+      <mass
+        value="0.242899822873843" />
+      <inertia
+        ixx="0.000338129094412127"
+        ixy="2.61076496315959E-19"
+        ixz="8.93158131565499E-08"
+        iyy="8.13172118318468E-05"
+        iyz="-5.23041064626997E-20"
+        izz="0.000330409858436411" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_Assembly_urdf/meshes/rhl_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rhj_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="rhl_3" />
+    <child
+      link="rhl_4" />
+    <axis
+      xyz="-0.011568 0 0.99993" />
+    <limit
+      lower="0"
+      upper="3.142"
+      effort="10"
+      velocity="2" />
+  </joint>
+</robot>
